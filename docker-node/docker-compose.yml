@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  web:
+    image: "node:14.15.1-alpine3.10"
+    container_name: node
+    entrypoint:
+      - "sh"
+      - "-c"
+      - "npm install && ./node_modules/.bin/nodemon server.js"
+    working_dir: "/usr/src/app"
+    ports:
+      - "80:8080"
+    volumes:
+      - "./src:/usr/src/app"

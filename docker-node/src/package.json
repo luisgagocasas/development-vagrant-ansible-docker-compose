@@ -1,0 +1,11 @@
+{
+  "name": "node-simple",
+  "version": "0.0.1",
+  "description": "Node simple application.",
+  "main": "server.js",
+  "author": "Luis Gago Casas",
+  "dependencies": {
+    "express": "4.17.1",
+    "nodemon": "2.0.6"
+  }
+}
